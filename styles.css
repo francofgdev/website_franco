@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.2s linear;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    background-color: black;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    border-radius: 5px;
+    display: none;
+}
+
+nav {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #616179;
+    color: orange;
+    border-bottom: 0.1rem solid;
+    padding-bottom: 0.5rem;
+}
+
+.hero-container {
+    height: 100vh;
+    /*O valor "100vh" na propriedade "height" faz com que o elemento ocupe 100% da altura da janela do navegador. Porém, é importante lembrar que a altura da janela pode variar dependendo do dispositivo e do tamanho da tela.*/
+    display: flex;
+    /*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    flex-direction: column;
+    /*Os itens ficam em uma única coluna, um embaixo do outro.*/
+    align-items: center;
+    /*Alinha os itens ao centro.*/
+    justify-content: space-between;
+    /*Cria um espaçamento igual entre os elementos. Mantendo o primeiro grudado no início e o último no final.*/
+    background-image: url('./images/nubelson-fernandes-iE71-TMrrkE-unsplash\ \(1\).jpg');
+    background-attachment: fixed;
+    /*Faz com que a imagem não se movimente junto com o documento, dando a impressão de que o conteúdo desliza sobre o fundo.*/
+    background-position: center;
+    /*alinha a imagem do background-image no centro do container*/
+    background-repeat: no-repeat;
+    /*maneira como a imagem será repetida no elemento. Podemos especificar que a imagem se repetirá em todos os eixos, apenas no horizontal, apenas no vertical ou não se repetirá.*/
+    background-size: cover;
+    /*faz com que a imagem ocupe o espaço inteiro onde foi aplicada*/
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    color: white;
+    margin-top: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    background-color: #000;
+    margin-top: 20px;
+} */
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    ;
+
+    40% {
+        opacity: 1
+    }
+
+    ;
+
+    80% {
+        opacity: 0
+    }
+
+    ;
+
+    100% {
+        opacity: 0
+    }
+
+    ;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0
+    };
+
+    40% {
+        opacity: 1
+    };
+
+    80% {
+        opacity: 0
+    };
+
+    100% {
+        opacity: 0
+    };
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+/* .content-container {
+    height: 100vh;
+    background-color: #000;
+} */
+
+.profile-container {
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./images/2.jpg');
+    background-attachment: fixed;
+    /*Faz com que a imagem não se movimente junto com o documento, dando a impressão de que o conteúdo desliza sobre o fundo.*/
+    background-position: center;
+    /*alinha a imagem do background-image no centro do container*/
+    background-repeat: no-repeat;
+    /*maneira como a imagem será repetida no elemento. Podemos especificar que a imagem se repetirá em todos os eixos, apenas no horizontal, apenas no vertical ou não se repetirá.*/
+    background-size: cover;
+    /*faz com que a imagem ocupe o espaço inteiro onde foi aplicada*/
+    padding: 100px 20px;
+}
+
+.profile-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 320px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: #333;
+    border-style: double;
+    padding: 20px 0;
+}
+
+/* .profile-card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 320px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: #333;
+    border-style: double;
+} */
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #333;
+
+}
+
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+}
+
+.profile-button {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.profile-button:hover {
+    color: black;
+    background-color: white;
+    border: #333 solid 2px;
+}
+
+.divider {
+    width: 90%;
+    border-top: 2px solid #bfbfbf;
+    margin: 10px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.icon-item {
+    width: 50px;
+    height: auto;
+    margin: 2px;
+}
+
+.profile-sinopse {
+    width: 30%;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin-right: 90px;
+}
+
+
+
+
+
+
+
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/projectbg.jpg');
+    background-attachment: fixed;
+    /*Efeito paralax*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*até aqui p paralax*/
+    padding: 10px 0 80px 0;
+}
+
+.project-content {
+    width: 95%;
+    /* height: 100%;
+    display: grid;
+    grid-template-rows: repeat(1fr, 2); */
+}
+
+.position-container {
+    width: 100%;
+    display: flex;
+    background-size: cover;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.project-card {
+    width: 700px;
+    height: 200px;
+    background-color: black;
+    opacity: 0.9;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.project-card:hover {
+    opacity: 1;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    width: 350px;
+    height: auto;
+    position: relative;
+    border-radius: 8px;
+    right: 20px;
+    top: 40px;
+}
+
+.image-reverse {
+    left: 20px;
+}
+
+.project-text {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10px;
+    text-align: justify;
+    /* font-size: 10px;
+    text-align: justify;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; */
+}
+
+
+.form-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/1693476739453.jpg');
+    background-attachment: fixed;
+    /*Efeito paralax*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*até aqui p paralax*/
+    padding: 90px 0 30px 0;
+
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 40px 10px 30px;
+    border-radius: 8px;
+    background-color: #1d1d2e;
+    width: 470px;
+    opacity: 0.75;
+    /* margin: 90px 0 10px 0; */
+
+}
+
+h2 {
+    color: #fff;
+    font-size: 32px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+input,
+textarea {
+    background-color: #e0e0f8;
+    color: black;
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+input:focus,
+textarea:focus {
+    background: white;
+}
+
+textarea {
+    max-height: 170px;
+    min-height: 170px;
+}
+
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #e0e0f8;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e0e0f8;
+    color: black;
+}
+
+
+
+
+footer {
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    width: 100vw;
+    height: 90px;
+    margin-top: 10px;
+
+}
+
+footer a {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 0.3rem;
+}
+
+footer a:hover {
+    color: #616179;
+    color: orange;
+}
+
+.copyrigth {
+
+    color: #fff;
+    text-align: center;
+    font-size: .75rem;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social-media-footer a {
+    text-decoration: none;
+    font-size: 25px;
+}

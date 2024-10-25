@@ -1,0 +1,291 @@
+@media (max-width:900px) {
+    h1 {
+        font-size: 60px;
+        width: 70%;
+        margin-top: 780px;
+        text-align: center;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-content {
+        width: 100%;
+    }
+
+    .profile-card {
+        width: 380px;
+        margin-bottom: 30px;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .profile-image {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    .icons-container {
+        width: 85%;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .icon-item {
+        margin: 3px;
+    }
+
+    .profile-sinopse {
+        width: 80%;
+        font-size: 24px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .project-content {
+        width: 90%;
+    }
+}
+
+
+@media (max-width:620px) {
+
+    h1 {
+        font-size: 45px;
+        margin-top: 550px;
+    }
+
+    .profile-card {
+        width: 80%;
+    }
+
+    .icons-container {
+        width: 70%;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .divider {
+        width: 80%;
+    }
+
+    .icon-item {
+        width: 60px;
+    }
+
+    .profile-sinopse {
+        width: 80%;
+        font-size: 22px;
+    }
+
+    /* .project-container {
+        flex-direction: column;
+    }
+
+    .project-content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .position-container {    
+        flex-direction: column;
+    }
+
+    .right {
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+    
+    .left {
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .project-card {
+        width: 90%;
+        height: auto;
+        background-color: transparent;
+        opacity: 1;
+        box-shadow: none;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-image {
+        width: 80%;
+        top: 0;
+    }
+
+    .project-text {
+        margin-top: 10px;
+        text-align: justify;
+        font-size: 20px;
+        width: 90%;
+        
+    } */
+        
+    .project-card {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        opacity: 1;
+        box-shadow: none;
+    }
+
+    .project-image {
+        width: 100%;
+        top: 0;
+    }   
+}
+
+@media (max-width:480px) {
+    nav {
+        width: 80%;
+    }
+    
+    li {        
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 55px;
+        width: 90%;
+        margin-top: 500px;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 200px;
+    }
+    
+    .name-text {
+        font-size: 23px;
+    }
+    
+    .profile-text {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .profile-sinopse {
+        width: 90%;
+        font-size: 23px;
+    }
+
+    .icons-container {
+        width: 85%;
+    }
+
+    .image {
+        right:  10px;
+    }
+
+    .image-reverse {
+        left: 0;
+    }
+
+    .project-text {
+        font-size: 27px;   
+    }
+
+    .right {
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+    .left {
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .project-card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-content {
+        width: 95%;
+    }
+}
+
+@media (max-width:360px) {
+    nav {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 45px;
+        width: 90%;
+        margin-top: 450px;
+    }
+
+    .profile-image {
+        width: 170px;
+    }
+
+    .name-text {
+        font-size: 21px;
+    }
+    
+    .profile-text {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .icons-container {
+        width: 95%;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .divider {
+        width: 90%;
+    }
+
+    .icon-item {
+        width: 50px;
+    }
+
+    .profile-sinopse {
+        
+        font-size: 21px;
+    }
+
+    .project-card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-text {
+        font-size: 18px;      
+    }
+
+    .form-content {
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width:320px) {
+    nav {
+        width: 95%;
+    }
+}
