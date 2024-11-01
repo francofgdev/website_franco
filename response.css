@@ -1,8 +1,7 @@
 @media (max-width:900px) {
     h1 {
-        font-size: 60px;
         width: 70%;
-        margin-top: 780px;
+        margin-top: 750px;
         text-align: center;
     }
 
@@ -16,7 +15,7 @@
     }
 
     .profile-card {
-        width: 380px;
+        width: 80%;
         margin-bottom: 30px;
         height: auto;
         padding: 30px 0;
@@ -27,6 +26,11 @@
         margin-bottom: 20px;
     }
 
+    .profile-button {
+        width: 300px;
+    }
+        
+
     .icons-container {
         width: 85%;
         gap: 15px;
@@ -34,12 +38,13 @@
     }
 
     .icon-item {
+        width: 80px;
         margin: 3px;
     }
 
     .profile-sinopse {
-        width: 80%;
-        font-size: 24px;
+        width: 90%;
+        font-size: 1.3rem;
         margin-right: 0;
         margin-top: 20px;
     }
@@ -47,13 +52,18 @@
     .project-content {
         width: 90%;
     }
+
+    .project-text {
+       font-weight: 300;
+    }
 }
 
 
-@media (max-width:620px) {
+@media (max-width:610px) {
 
     h1 {
-        font-size: 45px;
+        font-size: 3rem;
+        width: 90%;
         margin-top: 550px;
     }
 
@@ -73,11 +83,6 @@
 
     .icon-item {
         width: 60px;
-    }
-
-    .profile-sinopse {
-        width: 80%;
-        font-size: 22px;
     }
 
     /* .project-container {
@@ -156,9 +161,7 @@
     }
 
     h1 {
-        font-size: 55px;
-        width: 90%;
-        margin-top: 500px;
+        margin-top: 450px;
     }
 
     .profile-card {
@@ -175,14 +178,14 @@
     
     .profile-text {
         font-family: 'Oswald', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         width: 80%;
     }
 
     .profile-sinopse {
         width: 90%;
-        font-size: 23px;
+        font-size: 21px;
     }
 
     .icons-container {
@@ -198,7 +201,7 @@
     }
 
     .project-text {
-        font-size: 27px;   
+        font-size: 21px;   
     }
 
     .right {
@@ -220,17 +223,17 @@
     }
 
     .form-content {
-        width: 95%;
+        width: 80%;
     }
 }
 
-@media (max-width:360px) {
+@media (max-width:393px) {
     nav {
         width: 90%;
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 2.5rem;
         width: 90%;
         margin-top: 450px;
     }
@@ -262,11 +265,6 @@
         width: 50px;
     }
 
-    .profile-sinopse {
-        
-        font-size: 21px;
-    }
-
     .project-card {
         width: 90%;
         display: flex;
@@ -274,18 +272,10 @@
     }
 
     .project-text {
-        font-size: 18px;      
+        font-size: 16px;      
     }
 
     .form-content {
         width: 90%;
-    }
-}
-
-
-
-@media (max-width:320px) {
-    nav {
-        width: 95%;
     }
 }
